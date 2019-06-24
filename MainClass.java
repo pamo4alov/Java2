@@ -24,7 +24,7 @@ public class MainClass {
      * @throws MyExceptions
      */
     private static int calcSum(String[][] stringArray) throws MyExceptions {
-        if (stringArray[1].length > SIZE | stringArray.length > SIZE)
+        if (stringArray[1].length != SIZE | stringArray.length != SIZE)
             throw new MyArraySizeException("The size of the matrix is too high");
         int sum = 0;
         int j = 0;
