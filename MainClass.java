@@ -22,9 +22,9 @@ public class MainClass {
 
     /* Point of entry */
     public static void main(String[] args) throws Exception {
-        float[] array = new float[1000000];
-        System.out.printf("One thread solves the problem for %d ms.\n", Multithreading.oneThread(array)); // 398 ms.
-        System.out.printf("Two threads solves the problem for %d ms.\n", Multithreading.twoThreads(array)); // 219 ms.
+        float[] array = new float[10000000];
+        System.out.printf("One thread solves the problem for %d ms.\n", Multithreading.oneThread(array));
+        System.out.printf("Two threads solves the problem for %d ms.\n", Multithreading.twoThreads(array)); 
     }
 }
 
